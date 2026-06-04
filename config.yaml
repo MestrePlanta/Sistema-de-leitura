@@ -1,0 +1,44 @@
+# Configuração para Sistema de Leitura
+
+ocr:
+  # Idiomas para OCR
+  languages:
+    - por      # português brasileiro
+    - eng      # inglês
+  
+  # Threshold de confiança para OCR
+  confidence_threshold: 0.5
+  
+  # Engine Tesseract (0: legacy, 1: neural nets, 2: legacy+neural, 3: all)
+  engine_mode: 3
+
+preprocessing:
+  # Corrigir inclinação (skew correction)
+  deskew: true
+  
+  # Remover ruído
+  denoise: true
+  
+  # Melhorar contraste
+  contrast_enhancement: true
+  
+  # Melhorar nitidez
+  sharpening: true
+
+output:
+  # Qualidade do PDF: low, medium, high
+  pdf_quality: high
+  
+  # Compressão de imagem
+  compression: true
+  
+  # DPI da imagem de saída
+  dpi: 300
+
+performance:
+  # Número de threads para processamento paralelo
+  threads: 4
+  
+  # Tamanho máximo de imagem em pixels
+  max_image_width: 2400
+  max_image_height: 3200

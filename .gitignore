@@ -1,0 +1,29 @@
+# Diretórios
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.eggs/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Saídas
+example_output/
+*.pdf
+*.log
+
+# Imagens temporárias
+temp_*.pdf
+.temp/
